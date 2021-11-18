@@ -1,0 +1,7 @@
+name: thepitverymc
+author: "0xc0"
+version: 0.1
+main: thepit.verymc.main
+commands:
+  thepit:
+    permission: thepit.thepit

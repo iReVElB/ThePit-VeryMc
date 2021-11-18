@@ -1,0 +1,29 @@
+player_spawn: #Informations du joueur qui va spawn
+  world_name: "world" #Nom du monde
+  location: #Coordonnées 
+    x: 140.5
+    y: 77
+    z: -12
+    yaw: 0 #Direction gauche/droite
+    pitch : 0 #Direction bas/haut
+  gamemode: 
+    gamemode: 2 #0: survival, 1: creative, 2: adventure, 3: spectator. Par défaut: 2
+    use_permission_no_change: true #Si vous voulez que le gamemode ne change pas par rapport à la permission. Par exemple si vous voulez qu'un admin ou un membre du staff rejoint sans que
+                                   # le gamemode ne change, mettre sur true sinon false
+    permission_no_change: "thepit.gamemode" #Si le membre du staff a la permission, le gamemode ne sera pas changé, sinon le gamemode sera appliqué
+events: #Les évenements
+  player_join:
+    use_message: false
+    message: "§a{player_name} §ea rejoint la partie !" #{player_name}: nom du joueur. Les couleurs marchent avec & et §.
+  player_quit:
+    use_message: false
+    message: ""
+  food_level_change: #Nourriture
+    active: true
+    food_level: 20 #Par défaut 20
+  player_death:
+    use_message: false
+    message: ""
+    auto_respawn: true
+
+  
